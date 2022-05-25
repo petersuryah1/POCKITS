@@ -90,6 +90,14 @@ a:hover {
 .round {
   border-radius: 50%;
 }
+
+/* bottom navbar */
+.navbar {
+  border-radius : 5px;
+}
+.navbar-custom {
+  background-color: #023880;
+}
 </style>
 </head>
 
@@ -99,6 +107,8 @@ a:hover {
     <div>
     <a href="#"  class="previous round">  <img src="/gambar/Arrow 1.png" alt=""> </a> Back to Dashboard
     </div>
+
+
 
     <div class="row  d-flex justify-content-center align-items-start">
 
@@ -143,7 +153,27 @@ a:hover {
 </div>
 </div>
     
-
+<!-- Bottom Navbar -->
+<nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+    <ul class="navbar-nav nav-justified w-100">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-center">
+                <img src="/gambar/whiteheart.png" alt="">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-center">
+                <img src="/gambar/home.png" alt="">
+            </a>
+        </li>
+        <li class="nav-item dropup">
+            <a href="#" class="nav-link text-center" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <img src="/gambar/profile.png" alt="">
+            </a>
+            
+        </li>
+    </ul>
+</nav>
 </div>
 
 
