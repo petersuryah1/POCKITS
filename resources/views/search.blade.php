@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
 <!-- css search bar -->
 <style>
 
 body{
- background-color:#eee;
+ background-color:#fff;
  font-family: "Poppins", sans-serif;
  font-weight: 300;
 }
@@ -50,7 +52,7 @@ box-shadow: 0 0 40px rgba(51, 51, 51, .1);
 .search .fa-search{
 
  position: absolute;
- top: 20px;
+ top: 9px;
  left: 16px;
 
 }
@@ -98,6 +100,27 @@ a:hover {
 .navbar-custom {
   background-color: #023880;
 }
+
+/* font  */
+.twelve {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+}
+.fourteen {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+}
+.greyfont {
+    color: #B4B4B4;
+}
+.fourteen-400{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+}
+
 </style>
 </head>
 
@@ -105,7 +128,7 @@ a:hover {
 
 <div class="container">
     <div>
-    <a href="#"  class="previous round">  <img src="/gambar/Arrow 1.png" alt=""> </a> Back to Dashboard
+    <a href="#"  style="color:black;" class="">  <img src="/gambar/Arrow 1.png" alt="">  <span class="fourteen-400"> Back to Dashboard </span></a>
     </div>
 
 
@@ -116,7 +139,7 @@ a:hover {
 
             <div class="search">
                 <i class="fa fa-search"></i>
-                <input type="text" class="form-control" placeholder="Search">
+                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
                 
             </div>
             
@@ -125,39 +148,119 @@ a:hover {
     </div>
 
 
-    <div class="card mx-5">
-    <div class="row px-5  justify-content-around">
+    <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
+    <div class="row  px-3 justify-content-between">
    
-        <div class="col-2">
+        <div class="col-1 align-self-center">
             <img src="/gambar/Vector.png" alt="">
            
         </div>
 
-        <div class="col-5">
-            <a href="">Job Offer Category</a>
-            <h2>Job Name</h2>
-            <h3>Company Name</h3>
-
-            <div class="d-flex">
-                <h4>Regist by</h4>
-                <p>DD-MM-YYY</p>
+        <div class="col-9">
+            <a class="twelve px-0" href="">Job Offer Category</a>
+            <h2 class="fourteen">Job Name</h2>
+            <h3 class="twelve">Company Name</h3>
+            <div class="d-flex align-self-bottom">
+                <h4 class="twelve greyfont mb-0">Regist by</h4>
+                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
             </div>
 
             
-            <div class="d-flex">
-                <h4>Job Offer on></h4>
-                <p>DD-MM-YYY</p>
+            <div class="d-flex ">
+                <h4 class="twelve greyfont">Job Offer on</h4>
+                <p class="twelve ms-2">DD-MM-YYY</p>
             </div>
         </div>
         
-</div>
-</div>
+    </div>
+    </div>
+
+    <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
+    <div class="row  px-3 justify-content-between">
+   
+        <div class="col-1 align-self-center">
+            <img src="/gambar/Vector.png" alt="">
+           
+        </div>
+
+        <div class="col-9">
+            <a class="twelve px-0" href="">Job Offer Category</a>
+            <h2 class="fourteen">Job Name</h2>
+            <h3 class="twelve">Company Name</h3>
+            <div class="d-flex align-self-bottom">
+                <h4 class="twelve greyfont mb-0">Regist by</h4>
+                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+            </div>
+
+            
+            <div class="d-flex ">
+                <h4 class="twelve greyfont">Job Offer on</h4>
+                <p class="twelve ms-2">DD-MM-YYY</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
+    <div class="row  px-3 justify-content-between">
+   
+        <div class="col-1 align-self-center">
+            <img src="/gambar/Vector.png" alt="">
+           
+        </div>
+
+        <div class="col-9">
+            <a class="twelve px-0" href="">Job Offer Category</a>
+            <h2 class="fourteen">Job Name</h2>
+            <h3 class="twelve">Company Name</h3>
+            <div class="d-flex align-self-bottom">
+                <h4 class="twelve greyfont mb-0">Regist by</h4>
+                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+            </div>
+
+            
+            <div class="d-flex ">
+                <h4 class="twelve greyfont">Job Offer on</h4>
+                <p class="twelve ms-2">DD-MM-YYY</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
+    <div class="row  px-3 justify-content-between">
+   
+        <div class="col-1 align-self-center">
+            <img src="/gambar/Vector.png" alt="">
+           
+        </div>
+
+        <div class="col-9">
+            <a class="twelve px-0" href="">Job Offer Category</a>
+            <h2 class="fourteen">Job Name</h2>
+            <h3 class="twelve">Company Name</h3>
+            <div class="d-flex align-self-bottom">
+                <h4 class="twelve greyfont mb-0">Regist by</h4>
+                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+            </div>
+
+            
+            <div class="d-flex ">
+                <h4 class="twelve greyfont">Job Offer on</h4>
+                <p class="twelve ms-2">DD-MM-YYY</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
     
 <!-- Bottom Navbar -->
-<nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+<!-- <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="#" class="nav-link text-center">
+            <a href="#" class="nav-link text-center" style="height:48px !important;">
                 <img src="/gambar/whiteheart.png" alt="">
             </a>
         </li>
@@ -167,13 +270,13 @@ a:hover {
             </a>
         </li>
         <li class="nav-item dropup">
-            <a href="#" class="nav-link text-center" role="button" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <a href="#" class="nav-link text-center" style="height:48px !important;" >
                 <img src="/gambar/profile.png" alt="">
             </a>
             
         </li>
     </ul>
-</nav>
+</nav> -->
 </div>
 
 
