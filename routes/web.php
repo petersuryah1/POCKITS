@@ -24,3 +24,7 @@ Route::get('/search', function () {
 Route::get('/welcomePage', function () {
     return view('welcome page');
 });
+
+Route::get('/wishlist', function () {
+    return view('wishlist');
+});
