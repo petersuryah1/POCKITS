@@ -28,3 +28,15 @@ Route::get('/studentDashboard', function () {
 Route::get('/joboffer', function () {
     return view('jobofferpage');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+
+Route::get('/signupStudent', function () {
+    return view('signupstudent');
+});
