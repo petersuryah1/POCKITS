@@ -44,3 +44,7 @@ Route::get('/signupstudent', function () {
 Route::get('/signuporg', function () {
     return view('signuporg');
 });
+
+Route::get('/editevent', function () {
+    return view('inputeditevent');
+});

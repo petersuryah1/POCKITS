@@ -59,7 +59,9 @@
         <div class="col-2">
             <div class="buttonback">
                 <button class="btn btn-default">
+                <a href="http://127.0.0.1:8000/">
                 <img src="/gambar/backbutton.png" alt="" style="margin-left: 19px; margin-top: 23px">
+                </a>
                 </button>
             </div>
         </div>
@@ -103,21 +105,22 @@
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/action_page.php">
+        <form action="/action_page.php" class="was-validated">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
             </div>
     </form>
     </div>
     <p style="bac"></p>
     <div class="button1" style="margin-left: 32px; margin-right: 22px;">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
-        height: 52px; font-family: 'Open Sans'; font-size: 18px;">
+        height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">
         <p style="margin-top: 5px;">Login</p>
     </a>
     </div>
