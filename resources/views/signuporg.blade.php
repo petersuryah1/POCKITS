@@ -11,7 +11,7 @@
       integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
       crossorigin="anonymous"
     >
-    <title>Register</title>
+    <title>Register Organization</title>
     <style>
         .sidenav {
             height: 100%;

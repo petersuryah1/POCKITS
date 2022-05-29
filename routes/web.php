@@ -37,6 +37,10 @@ Route::get('/signup', function () {
     return view('signup');
 });
 
-Route::get('/signupStudent', function () {
+Route::get('/signupstudent', function () {
     return view('signupstudent');
+});
+
+Route::get('/signuporg', function () {
+    return view('signuporg');
 });
