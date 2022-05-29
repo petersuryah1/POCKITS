@@ -40,3 +40,7 @@ Route::get('/signup', function () {
 Route::get('/signupStudent', function () {
     return view('signupstudent');
 });
+
+Route::get('/studentprofilews', function () {
+    return view('studentprofilews');
+});
