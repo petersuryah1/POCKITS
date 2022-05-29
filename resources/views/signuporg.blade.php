@@ -11,7 +11,7 @@
       integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
       crossorigin="anonymous"
     >
-    <title>Register</title>
+    <title>Register Organization</title>
     <style>
         .sidenav {
             height: 100%;
@@ -93,19 +93,21 @@
     </div>
     </div>
 
-    <div class="pockitsimg">
-        <img src="/gambar/pockits gede.png" alt="" style="margin-left: 59px; margin-right: 60px; margin-top: 22px;">
+    <div class="image">
+        <img src="/gambar/Userlogo.png" alt="" style="margin-left: 135.68px; margin-right: 135.94px; margin-top: 58.58px;">
     </div>
-
-    <div class="word">
-        <p style="font-family: 'Open Sans'; font-size: 28px; margin-left: 32px;">
-            Sign up
+<br>
+    <div class="editphotoword">
+        <p style="font-family: 'Roboto'; font-size: 12px; text-align:center;">
+            <a href="#">Edit your profile picture</a>
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
         <form action="/action_page.php">
             <label>Username:</label>
-            <input type="text" class="form-control mt-3" placeholder="Input username">
+            <input type="text" class="form-control mt-3 mb-3" placeholder="Input username">
+            <label>Organization name:</label>
+            <input type="text" class="form-control mt-3" placeholder="Input your organization name">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
               <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -114,6 +116,10 @@
               <label for="pwd" class="form-label">Password:</label>
               <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
             </div>
+            <div class="mb-3 mt-3">
+                <label for="comment">About:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+              </div>
     </form>
     </div>
     <p style="bac"></p>

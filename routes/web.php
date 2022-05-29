@@ -37,10 +37,14 @@ Route::get('/signup', function () {
     return view('signup');
 });
 
-Route::get('/signupStudent', function () {
+Route::get('/signupstudent', function () {
     return view('signupstudent');
 });
 
-Route::get('/studentprofilews', function () {
-    return view('studentprofilews');
+Route::get('/signuporg', function () {
+    return view('signuporg');
+});
+
+Route::get('/editevent', function () {
+    return view('inputeditevent');
 });

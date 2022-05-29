@@ -11,23 +11,87 @@
       integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
       crossorigin="anonymous"
     >
-    <title>Register</title>
+    <title>Login</title>
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #023880;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+          </style>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-2">
-        <div class="buttonback">
-            <img src="/gambar/backbutton.png" alt="" style="margin-left: 19px; margin-top: 23px">
+            <div class="buttonback">
+                <button class="btn btn-default">
+                <a href="http://127.0.0.1:8000/">
+                <img src="/gambar/backbutton.png" alt="" style="margin-left: 19px; margin-top: 23px">
+                </a>
+                </button>
+            </div>
         </div>
-    </div>
     <div class="col-8">
         <p></p>
     </div>
-    <div class="col-2" style="margin-top:15px;">
-        <div class="menu">
-            <img src="/gambar/Menu.png" alt="">
-         </div>
+    <div class="col-2">
+        <div class="menubutton" >
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Contact Us</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
+        <div class="col-2" style="margin-top:15px;">
+            {{-- <div class="menu">
+                <button class="btn btn-default">
+                <img src="/gambar/Menu.png" alt="">
+                </button>
+             </div> --}}
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "180px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+        </div>
     </div>
     </div>
 
@@ -41,22 +105,23 @@
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/action_page.php">
+        <form action="/action_page.php" class="was-validated">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
             </div>
     </form>
     </div>
     <p style="bac"></p>
     <div class="button1" style="margin-left: 32px; margin-right: 22px;">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
-        height: 52px; font-family: 'Open Sans'; font-size: 18px;">
-        <p style="margin-top: 5px;">Submit</p>
+        height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">
+        <p style="margin-top: 5px;">Login</p>
     </a>
     </div>
 </div>
