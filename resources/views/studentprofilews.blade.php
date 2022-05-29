@@ -196,14 +196,24 @@
             </div>
         </div>
 
-        <div class="  " style="; margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
+        <div class="container " style="; margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
             <div class="row  px-3 justify-content-between">
 
 
                 <div class="col-9 align-self-center">
                     <h1 class="thirteen">MY PROFILE</h2>
                 </div>
-                
+            </div>
+            <div class="row  px-3 justify-content-between " style="margin-bottom: 15px">
+
+                <a href="#" class="btn btn-success col" style="border-radius: 50px; background-color: #023880; width: 150px;
+                height: 36px; font-family: 'Roboto'; font-size: 16px; margin-left:25px">
+                    <p class="fourteen" style="align-self-center">Wishlist</p>
+                </a>
+                <a href="#" class="btn col" style="border-radius: 50px; width: 150px;
+                height: 36px; font-family: 'Roboto'; font-size: 16px;margin-right:25px">
+                    <p class="fourteen" style="align-self-center ">Profile Detail</p>
+                </a>
 
             </div>
         </div>
