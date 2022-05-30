@@ -21,6 +21,39 @@
     font-weight: 400;
     }
 
+    .fourteen-700{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 700;
+    }
+
+    .twelve-400{
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    }
+
+    .greyfont {
+    color: #B4B4B4;
+    }
+ 
+    .twelve {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    
+    }
+    /* bottom navbar */
+.navbar {
+  border-radius : 5px;
+}
+.navbar-custom {
+  background-color: #023880;
+}
+
+
+
+
 </style>
 </head>
 
@@ -35,6 +68,51 @@
         <div class="row" style="margin-top: 20px; padding: 35px 70px;">
             <img src="/gambar/jobofferimg.png" width="222px" height="150px" alt="">
         </div>
+
+        <p class="fourteen-700" style="text-align:center">Job Name</p>
+        <p class="twelve-400" style="text-align:center">Company Name</p>
+
+        <hr>
+        
+        <div class="d-flex align-self-bottom justify-content-end">
+                <h4 class="twelve-400 greyfont mb-0">Regist by</h4>
+                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+            </div>
+
+            
+            <div class="d-flex justify-content-end">
+                <h4 class="twelve greyfont">Job Offer on</h4>
+                <p class="twelve-400 ms-2">DD-MM-YYY</p>
+            </div>
+
+            <h3 class="fourteen-700" style="text-align: center">Job Detail</h3>
+
+            <p class="fourteen-400"style="text-align:center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        
+        <!-- Bottom Navbar -->
+    <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-center" style="height:48px !important;">
+                    <img src="/gambar/whiteheart.png" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-center">
+                    <img src="/gambar/home.png" alt="">
+                </a>
+            </li>
+            <li class="nav-item dropup">
+                <a href="#" class="nav-link text-center" style="height:48px !important;" >
+                    <img src="/gambar/profile.png" alt="">
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+            
+
     </div>
 
 

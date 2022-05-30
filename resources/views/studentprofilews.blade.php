@@ -207,7 +207,7 @@
             <div class="row  px-3 justify-content-between " style="margin-bottom: 15px">
 
                 <a href="#" class="btn btn-success col" style="border-radius: 50px; background-color: #023880; width: 150px;
-                height: 36px; font-family: 'Roboto'; font-size: 16px; margin-left:25px">
+                height: 36px; font-family: 'Roboto'; font-size: 16px; margin-right:25px">
                     <p class="fourteen" style="align-self-center">Wishlist</p>
                 </a>
                 <a href="#" class="btn col" style="border-radius: 50px; width: 150px;
