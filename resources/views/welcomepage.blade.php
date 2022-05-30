@@ -10,14 +10,87 @@
     <link rel="stylesheet" href="/css/welcome.css" >
     <title>Welcome Page</title>
 </head>
+<style>
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #023880;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+      </style>
 <body>
     <div class="container bg-welcome">
         <div class="row text-center">
             <h1 class="text-dark">ALL YOUR EVENTS  IN A POCKET</h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-2">
+
+    </div>
+    <div class="col-8">
+        <p></p>
+    </div>
+    <div class="col-2">
+    <div class="menubutton" >
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
+    <div class="col-2" style="margin-top:15px;">
+        {{-- <div class="menu">
+            <button class="btn btn-default">
+            <img src="/gambar/Menu.png" alt="">
+            </button>
+         </div> --}}
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "180px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    </div>
+</div>
+    </div>
     <div class="container bg-blue" >
-               
+
     <div class="card">
         <div class="row justify-content-between text-center">
         <div class="col-4">

@@ -107,17 +107,17 @@
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
         <form action="/signupstudent" method="POST">
           @csrf
-            <label>name:</label>
-            <input name="name" type="text" class="form-control mt-3" placeholder="Input username">
+            <label>Name:</label>
+            <input name="name" type="text" class="form-control mt-3" placeholder="Input your name">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="Enter email">
+              <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email">
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password:</label>
-              <input name="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
+              <input name="password" type="password" class="form-control" id="pwd" placeholder="Enter your password">
             </div>
-    
+
     </div>
     <p style="bac"></p>
     <div class="button1" style="margin-left: 32px; margin-right: 22px;">
