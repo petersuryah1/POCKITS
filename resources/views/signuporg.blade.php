@@ -103,32 +103,37 @@
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/action_page.php">
-            <label>Username:</label>
-            <input type="text" class="form-control mt-3 mb-3" placeholder="Input username">
+        <form action="/signuporg" method="POST">
+          @csrf
+            <!-- <label>Username:</label>
+            <input type="text" class="form-control mt-3 mb-3" placeholder="Input username"> -->
             <label>Organization name:</label>
-            <input type="text" class="form-control mt-3" placeholder="Input your organization name">
+            <input name="name" type="text" class="form-control mt-3" placeholder="Input your organization name">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <input name="email" type="email" class="form-control" id="email" placeholder="Enter email">
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              <input name="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
             </div>
+
+            
+
             <div class="mb-3 mt-3">
                 <label for="comment">About:</label>
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                <textarea name="about" class="form-control" rows="5" id="comment" name="text"></textarea>
               </div>
-    </form>
+   
     </div>
     <p style="bac"></p>
-    <div class="button1" style="margin-left: 32px; margin-right: 22px;">
-        <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
+    <div  class="button1" style="margin-left: 32px; margin-right: 22px;">
+        <button type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
         <p style="margin-top: 5px;">Register</p>
-    </a>
+          </button>
     </div>
+    </form>
 </div>
 </body>
 </html>

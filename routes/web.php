@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\registrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,9 @@ Route::get('/signup', function () {
 Route::get('/signupstudent', function () {
     return view('signupstudent');
 });
+Route::post('/signupstudent', [registrationController::class, 'store'] );
+
+
 
 Route::get('/signuporg', function () {
     return view('signuporg');
@@ -48,3 +52,4 @@ Route::get('/signuporg', function () {
 Route::get('/editevent', function () {
     return view('inputeditevent');
 });
+
