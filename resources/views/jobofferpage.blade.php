@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 <style>
     .nounderline{
         text-decoration: none;
     }
-    
+
     .fourteen-400{
     font-family: 'Roboto';
     font-size: 14px;
@@ -36,12 +36,12 @@
     .greyfont {
     color: #B4B4B4;
     }
- 
+
     .twelve {
     font-family: 'Roboto';
     font-size: 12px;
     font-weight: 400;
-    
+
     }
     /* bottom navbar */
 .navbar {
@@ -73,13 +73,13 @@
         <p class="twelve-400" style="text-align:center">Company Name</p>
 
         <hr>
-        
+
         <div class="d-flex align-self-bottom justify-content-end">
                 <h4 class="twelve-400 greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
             </div>
 
-            
+
             <div class="d-flex justify-content-end">
                 <h4 class="twelve greyfont">Job Offer on</h4>
                 <p class="twelve-400 ms-2">DD-MM-YYY</p>
@@ -89,29 +89,29 @@
 
             <p class="fourteen-400"style="text-align:center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 
-        
+
         <!-- Bottom Navbar -->
-    <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
-        <ul class="navbar-nav nav-justified w-100">
-            <li class="nav-item">
-                <a href="#" class="nav-link text-center" style="height:48px !important;">
-                    <img src="/gambar/whiteheart.png" alt="">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-center">
-                    <img src="/gambar/home.png" alt="">
-                </a>
-            </li>
-            <li class="nav-item dropup">
-                <a href="#" class="nav-link text-center" style="height:48px !important;" >
-                    <img src="/gambar/profile.png" alt="">
-                </a>
-                
-            </li>
-        </ul>
-    </nav>
-            
+        <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a href="/wishlist" class="nav-link text-center" style="height:48px !important;">
+                        <img src="/gambar/whiteheart.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/studentDashboard" class="nav-link text-center">
+                        <img src="/gambar/home.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item dropup">
+                    <a href="studentprofilews" class="nav-link text-center" style="height:48px !important;">
+                        <img src="/gambar/profile.png" alt="">
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+
 
     </div>
 

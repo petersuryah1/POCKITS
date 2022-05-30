@@ -279,17 +279,17 @@
         <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
             <ul class="navbar-nav nav-justified w-100">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center" style="height:48px !important;">
+                    <a href="/wishlist" class="nav-link text-center" style="height:48px !important;">
                         <img src="/gambar/whiteheart.png" alt="">
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">
+                    <a href="/studentDashboard" class="nav-link text-center">
                         <img src="/gambar/home.png" alt="">
                     </a>
                 </li>
                 <li class="nav-item dropup">
-                    <a href="#" class="nav-link text-center" style="height:48px !important;">
+                    <a href="studentprofilews" class="nav-link text-center" style="height:48px !important;">
                         <img src="/gambar/profile.png" alt="">
                     </a>
 

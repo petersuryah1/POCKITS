@@ -56,3 +56,7 @@ Route::get('/editevent', function () {
 Route::get('/studentprofilews', function () {
     return view('studentprofilews');
 });
+
+Route::get('/wishlist', function () {
+    return view('wishlist');
+});
