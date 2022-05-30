@@ -41,7 +41,7 @@ Route::get('/signup', function () {
 Route::get('/signupstudent', function () {
     return view('signupstudent');
 });
-Route::post('/signupstudent', [registrationController::class, 'store'] );
+Route::post('/signupstudent', [registrationController::class, 'store']);
 
 
 
@@ -53,3 +53,6 @@ Route::get('/editevent', function () {
     return view('inputeditevent');
 });
 
+Route::get('/studentprofilews', function () {
+    return view('studentprofilews');
+});
