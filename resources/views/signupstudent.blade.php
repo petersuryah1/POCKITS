@@ -59,7 +59,9 @@
         <div class="col-2">
             <div class="buttonback">
                 <button class="btn btn-default">
+                    <a href="http://127.0.0.1:8000/signup">
                 <img src="/gambar/backbutton.png" alt="" style="margin-left: 19px; margin-top: 23px">
+            </a>
                 </button>
             </div>
         </div>
