@@ -13,6 +13,43 @@
     >
     <title>Register Organization</title>
     <style>
+        .form-input {
+  width:336px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-top:20px;
+  background:#023880;
+  margin-top: 10px;
+
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  width:45%;
+  height:45px;
+  margin-left: 25%;
+  line-height:50px;
+  text-align:center;
+  background:#023880;
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  font-weight:300;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:100%;
+  display:none;
+
+  margin-bottom:30px;
+}
+
         .sidenav {
             height: 100%;
             width: 0;
@@ -69,7 +106,7 @@
         <p></p>
     </div>
     <div class="col-2">
-        <div class="menubutton" >
+        <div class="menubutton" style="margin-top: 8px; margin-right:25px; height:52px">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Contact Us</a>
@@ -95,15 +132,25 @@
     </div>
     </div>
 
-    <div class="image">
-        <img src="/gambar/Userlogo.png" alt="" style="margin-left: 135.68px; margin-right: 135.94px; margin-top: 58.58px;">
-    </div>
+    <div class="form-input">
+        <div class="preview">
+          <img id="file-ip-1-preview">
+        </div>
+        <label for="file-ip-1">Upload Logo</label>
+        <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+      </div>
+      <script type="text/javascript">
+        function showPreview(event){
+        if(event.target.files.length > 0){
+          var src = URL.createObjectURL(event.target.files[0]);
+          var preview = document.getElementById("file-ip-1-preview");
+          preview.src = src;
+          preview.style.display = "block";
+        }
+      }
+      </script>
 <br>
-    <div class="editphotoword">
-        <p style="font-family: 'Roboto'; font-size: 12px; text-align:center;">
-            <a href="#">Edit your profile picture</a>
-        </p>
-    </div>
+
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
         <form action="/signuporg" method="POST">
           @csrf
@@ -120,13 +167,13 @@
               <input name="password" type="password" class="form-control" id="pwd" placeholder="Enter password">
             </div>
 
-            
+
 
             <div class="mb-3 mt-3">
                 <label for="comment">About:</label>
                 <textarea name="about" class="form-control" rows="5" id="comment" name="text"></textarea>
               </div>
-   
+
     </div>
     <p style="bac"></p>
     <div  class="button1" style="margin-left: 32px; margin-right: 22px;">

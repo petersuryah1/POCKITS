@@ -69,7 +69,7 @@
         <p></p>
     </div>
     <div class="col-2">
-        <div class="menubutton" >
+        <div class="menubutton" style="margin-top: 8px; margin-right:25px; height:52px">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#">Contact Us</a>

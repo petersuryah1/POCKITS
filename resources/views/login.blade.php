@@ -69,7 +69,7 @@
         <p></p>
     </div>
     <div class="col-2">
-        <div class="menubutton" >
+        <div class="menubutton" style="margin-top: 8px; margin-right:25px; height:52px">
           <div class="row justify-content-end">
             <div class="col-12">
               <div id="mySidenav" class="sidenav">
