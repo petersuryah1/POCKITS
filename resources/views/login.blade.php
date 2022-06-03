@@ -120,8 +120,9 @@
               <label for="pwd" class="form-label">Password:</label>
               <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
             </div>
-    </form>
+
     </div>
+    <a href="#" style="margin-left: 28px">Forget password? Click here</a>
     <p style="bac"></p>
     <div class="button1" style="margin-left: 32px; margin-right: 22px;">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
@@ -129,6 +130,8 @@
         <p style="margin-top: 5px;">Login</p>
     </a>
     </div>
+</form>
+
 </div>
 </body>
 </html>

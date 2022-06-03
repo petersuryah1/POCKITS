@@ -13,6 +13,42 @@
     >
     <title>Edit Event</title>
     <style>
+         .form-input {
+  width:336px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-top:20px;
+  background:#023880;
+  margin-top: 10px;
+
+}
+.form-input input {
+  display:none;
+
+}
+.form-input label {
+  display:block;
+  width:45%;
+  height:45px;
+  margin-left: 25%;
+  line-height:50px;
+  text-align:center;
+  background:#023880;
+  color:#fff;
+  font-size:15px;
+  font-family:"Open Sans",sans-serif;
+  font-weight:300;
+  border-radius:15px;
+  cursor:pointer;
+}
+
+.form-input img {
+  width:100%;
+  display:none;
+
+  margin-bottom:30px;
+}
         .sidenav {
             height: 100%;
             width: 0;
@@ -92,43 +128,119 @@
         </div>
     </div>
     </div>
-
-    <div class="pockitsimg">
-        <img src="/gambar/exampleimage.png" alt="" style="margin-left: 135.68px; margin-right: 135.94px; margin-top: 58.58px;">
-    </div>
 <br>
-    <div class="editphotoword">
-        <p style="font-family: 'Roboto'; font-size: 12px; text-align:center;">
-            <a href="#">Add job poster</a>
-        </p>
+<div class="form-input">
+    <div class="preview">
+      <img id="file-ip-1-preview">
     </div>
+    <label for="file-ip-1">Upload Logo</label>
+    <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+  </div>
+  <script type="text/javascript">
+    function showPreview(event){
+    if(event.target.files.length > 0){
+      var src = URL.createObjectURL(event.target.files[0]);
+      var preview = document.getElementById("file-ip-1-preview");
+      preview.src = src;
+      preview.style.display = "block";
+    }
+  }
+  </script>
+  <br>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
         <form action="/action_page.php">
             <label>Job name:</label>
             <input type="text" class="form-control mt-3 mb-3" placeholder="Input username">
-            <label>Organization name:</label>
+            <label>Job category:</label>
             <input type="text" class="form-control mt-3" placeholder="Input your organization name">
+            <div class="row">
+            <div class="col-6">
             <div class="mb-3 mt-3">
-              <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <label for="email" class="form-label">Open recruitment:</label>
+              <input type="date" class="form-control" id="email" placeholder="" name="email">
             </div>
-            <div class="mb-3">
-              <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-            </div>
+        </div>
+        <div class="col-6">
             <div class="mb-3 mt-3">
-                <label for="comment">About:</label>
+              <label for="email" class="form-label">Closed recruitment:</label>
+              <input type="date" class="form-control" id="email" placeholder="" name="email">
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <div class="mb-3 mt-3">
+              <p>Registration?</p>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 mt-3">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">No</label>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <div class="mb-3 mt-3">
+              <label for="date" class="form-label">Start regist:</label>
+              <input type="date" class="form-control" id="email" placeholder="" name="email">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3 mt-3">
+              <label for="date" class="form-label">End regist:</label>
+              <input type="date" class="form-control" id="email" placeholder="" name="email">
+            </div>
+        </div>
+        </div>
+        <label>Location:</label>
+            <input type="text" class="form-control mt-3 mb-3" placeholder="Input your location">
+          <div class="mb-3 mt-3">
+                <label for="comment">Job description:</label>
                 <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
               </div>
-    </form>
-    </div>
-    <p style="bac"></p>
-    <div class="button1" style="margin-left: 32px; margin-right: 22px;">
+              <div class="row">
+                <div class="col-6">
+                <div class="mb-3 mt-3">
+                  <p>Requirement?</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3 mt-3">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                        <label class="form-check-label" for="radio1">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                        <label class="form-check-label" for="radio1">No</label>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="comment">Requirement:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+              </div>
+              <label>How to regist?</label>
+              <input type="text" class="form-control mt-3 mb-3" placeholder="">
+              <p style="bac"></p>
+    <div class="button1" style="margin-left: 12px; margin-right: 22px;">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
-        <p style="margin-top: 5px;">Register</p>
+        <p style="margin-top: 5px;">Submit</p>
     </a>
     </div>
+    </form>
+    </div>
+
 </div>
 </body>
 </html>
