@@ -121,7 +121,7 @@
     </div>
     <p style="bac"></p>
     <div class="button1" style="margin-left: 32px; margin-right: 22px;">
-        <button  type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
+        <button href="http://127.0.0.1:8000/studentDashboard" type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
         <p style="margin-top: 5px;">Register</p>
           </button>

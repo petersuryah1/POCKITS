@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,7 @@ Route::get('/search', function () {
 
 Route::get('/studentDashboard', function () {
     return view('studentDashboard');
-});
+})->name('studentDashboard');
 
 Route::get('/joboffer', function () {
     return view('jobofferpage');
@@ -33,6 +34,8 @@ Route::get('/joboffer', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::get('/signup', function () {
     return view('signup');

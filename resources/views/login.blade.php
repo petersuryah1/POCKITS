@@ -110,26 +110,27 @@
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/action_page.php" class="was-validated">
+        <form action="/login" method="POST" class="was-validated">
+        @csrf
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter email"  required>
               <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+              <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password"  required>
             </div>
 
     </div>
     <a href="#" style="margin-left: 28px">Forget password? Click here</a>
     <p style="bac"></p>
-    <div class="button1" style="margin-left: 32px; margin-right: 22px;">
+    <button type="submit" class="button1" style="margin-left: 32px; margin-right: 22px;">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">
         <p style="margin-top: 5px;">Login</p>
     </a>
-    </div>
+          </button>
 </form>
 
 </div>

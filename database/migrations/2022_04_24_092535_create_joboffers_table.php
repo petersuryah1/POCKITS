@@ -19,6 +19,7 @@ class CreateJoboffersTable extends Migration
             $table->date('tanggalPenutupan');
             $table->integer('jumlahLowongan');
             $table->text('deskripsi');
+            $table->string('kategori');
             $table->string('gambarProfilPerusahaan');
             $table->string('namajoboffer');
             $table->foreignId('idPerusahaan');
