@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\organizationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,6 +51,12 @@ Route::post('/signupstudent', [registrationController::class, 'store']);
 
 Route::get('/signuporg', function () {
     return view('signuporg');
+});
+
+Route::post('/signuporg', [organizationController::class, 'store']);
+
+Route::get('updateorg', function () {
+    return view('updateorg');
 });
 
 Route::get('/editevent', function () {
