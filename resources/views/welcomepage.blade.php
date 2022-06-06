@@ -17,7 +17,7 @@
         position: fixed;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         background-color: #023880;
         overflow-x: hidden;
         transition: 0.5s;
@@ -49,22 +49,15 @@
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
       }
+     
       </style>
 <body>
-    <div class="container bg-welcome">
-        <div class="row text-center">
-            <h1 class="text-dark">ALL YOUR EVENTS  IN A POCKET</h1>
-        </div>
+  <div class="row">
+    <div class="col-6">
+      <img src="/gambar/pockits logo.png" alt="">
     </div>
-    <div class="row">
-        <div class="col-2">
-
-    </div>
-    <div class="col-8">
-        <p></p>
-    </div>
-    <div class="col-2">
-    <div class="menubutton" >
+  <div class="col-6" >
+    <div class="menubutton text-end pt-2" >
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">Contact Us</a>
@@ -92,7 +85,22 @@
         </script>
     </div>
 </div>
+  </div>
+
     </div>
+    <div class="container bg-welcome">
+        <div class="row text-center">
+            <h1 class="text-dark">ALL YOUR EVENTS  IN A POCKET</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+
+    </div>
+    <div class="col-8">
+        <p></p>
+    </div>
+
     <div class="container bg-blue" >
 
     <div class="card">
@@ -111,6 +119,23 @@
         </div>
         </div>
         </div>
+    </div>
+    <div class="end">
+        <div class="row">
+        <div class="col-6">
+        <img src="/gambar/pockits logo.png" alt="">
+     </div>
+        <div class="col-6" >
+        <div align ="center">
+          <p> CONTACT US</P>
+          <img src="/gambar/instagram.png" alt="" class="me-1"> 
+          
+          <img src="/gambar/YouTube.png" alt="" class="me-1">
+          <img src="/gambar/Linkedin.png" alt="" class="me-1">
+      </div> 
+      </div>
+
+
     </div>
 </body>
 </html>
