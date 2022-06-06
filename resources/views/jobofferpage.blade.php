@@ -69,25 +69,25 @@
             <img src="/gambar/jobofferimg.png" width="222px" height="150px" alt="">
         </div>
 
-        <p class="fourteen-700" style="text-align:center">Job Name</p>
-        <p class="twelve-400" style="text-align:center">Company Name</p>
+        <p class="fourteen-700" style="text-align:center">{{$joboffer->namajoboffer}}</p>
+        <p class="twelve-400" style="text-align:center">{{$joboffer->perusahaan->namaPerusahaan}}</p>
 
         <hr>
 
         <div class="d-flex align-self-bottom justify-content-end">
                 <h4 class="twelve-400 greyfont mb-0">Regist by</h4>
-                <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+                <p class="twelve ms-4 mb-0">{{$joboffer->tanggalPenerimaan}}</p>
             </div>
 
 
             <div class="d-flex justify-content-end">
                 <h4 class="twelve greyfont">Job Offer on</h4>
-                <p class="twelve-400 ms-2">DD-MM-YYY</p>
+                <p class="twelve-400 ms-2">{{$joboffer->tanggalPenutupan}}</p>
             </div>
 
             <h3 class="fourteen-700" style="text-align: center">Job Detail</h3>
 
-            <p class="fourteen-400"style="text-align:center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <p class="fourteen-400"style="text-align:center">{{$joboffer->deskripsi}}</p>
 
 
         <!-- Bottom Navbar -->

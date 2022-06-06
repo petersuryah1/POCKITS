@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,13 +23,9 @@ Route::get('/search', function () {
     return view('search');
 });
 
-Route::get('/studentDashboard', function () {
-    return view('studentDashboard');
-})->name('studentDashboard');
+Route::get('/studentDashboard', [EventController::class, 'index'])->name('studentDashboard');
 
-Route::get('/joboffer', function () {
-    return view('jobofferpage');
-});
+Route::get('/joboffer/{id}', [EventController::class, 'show'])->name('detailJoboffer');
 
 Route::get('/login', function () {
     return view('login');
@@ -53,7 +49,11 @@ Route::get('/signuporg', function () {
 });
 
 Route::get('/editevent', function () {
-    return view('inputeditevent');
+    return view('editevent');
+});
+
+Route::get('/inputevent', function () {
+    return view('inputevent');
 });
 
 Route::get('/studentprofilews', function () {

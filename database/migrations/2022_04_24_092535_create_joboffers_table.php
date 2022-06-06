@@ -20,7 +20,7 @@ class CreateJoboffersTable extends Migration
             $table->integer('jumlahLowongan');
             $table->text('deskripsi');
             $table->string('kategori');
-            $table->string('gambarProfilPerusahaan');
+            $table->string('gambarProfilPerusahaan')->nullable();
             $table->string('namajoboffer');
             $table->foreignId('idPerusahaan');
             $table->foreign('idPerusahaan')->references('id')->on('perusahaans')->onDelete('cascade');
