@@ -104,9 +104,9 @@
             Sign up
         </p>
     </div>
+    <form action="/signupstudent" method="POST">
+    @csrf
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/signupstudent" method="POST">
-          @csrf
             <label>Name:</label>
             <input name="name" type="text" class="form-control mt-3" placeholder="Input your name">
             <div class="mb-3 mt-3">

@@ -2,24 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\joboffer;
-use App\Model\perusahaan;
-
 use Illuminate\Http\Request;
+use App\Models\joboffer;
 
-class EventController extends Controller
+class InputJobController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $joboffer = joboffer::all();
 
-        return view('studentDashboard', ['joboffer' => $joboffer]);
-    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -39,7 +28,31 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->file('image')->store('post-images')
+        
+        $validated = $request->validate([
+            'namajoboffer' => 'required',
+            'kategori' => 'required',
+            'tanggalPenerimaan' => 'required',
+            'tanggalPenutupan' => 'required',
+            'deskripsi' => 'required',
+            'jumlahLowongan' => 'required',
+
+        ]);
+
+
+        $joboffer = new Joboffer();
+
+        $joboffer->fill([
+            'namajoboffer' => $validated['namajoboffer'],
+            'kategori' => $validated['kategori'],
+            'tanggalPenerimaan' => $validated['tanggalPenerimaan'],
+            'tanggalPenutupan' => $validated['tanggalPenutupan'],
+            'deskripsi' => $validated['deskripsi'],
+            'jumlahLowongan' => $validated['jumlahLowongan'],
+            'idPerusahaan' => 1,
+        ]);
+
+        $joboffer->save();
     }
 
     /**

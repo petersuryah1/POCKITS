@@ -11,7 +11,7 @@
       integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
       crossorigin="anonymous"
     >
-    <title>Edit Event</title>
+    <title>input Event</title>
     <style>
          .form-input {
   width:336px;
@@ -129,7 +129,9 @@
     </div>
     </div>
 <br>
-<div class="form-input">
+<form method="POST" action="/inputevent" enctype="multipart/form-data">
+  @csrf
+  <div class="form-input">
     <div class="preview">
       <img id="file-ip-1-preview">
     </div>
@@ -148,95 +150,38 @@
   </script>
   <br>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/action_page.php">
+        
             <label>Job name:</label>
-            <input type="text" class="form-control mt-3 mb-3" placeholder="Input username">
+            <input type="text" name="namajoboffer" class="form-control mt-3 mb-3" placeholder="Input name">
             <label>Job category:</label>
-            <input type="text" class="form-control mt-3" placeholder="Input your organization name">
+            <input type="text" name="kategori" class="form-control mt-3" placeholder="Input job category">
             <div class="row">
             <div class="col-6">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Open recruitment:</label>
-              <input type="date" class="form-control" id="email" placeholder="" name="email">
+              <input type="date" class="form-control" id="email" placeholder="" name="tanggalPenerimaan">
             </div>
         </div>
         <div class="col-6">
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Closed recruitment:</label>
-              <input type="date" class="form-control" id="email" placeholder="" name="email">
+              <input type="date" class="form-control" id="email" placeholder="" name="tanggalPenutupan">
             </div>
         </div>
         </div>
-        <div class="row">
-            <div class="col-6">
-            <div class="mb-3 mt-3">
-              <p>Registration?</p>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="mb-3 mt-3">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                    <label class="form-check-label" for="radio1">Yes</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                    <label class="form-check-label" for="radio1">No</label>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-            <div class="mb-3 mt-3">
-              <label for="date" class="form-label">Start regist:</label>
-              <input type="date" class="form-control" id="email" placeholder="" name="email">
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="mb-3 mt-3">
-              <label for="date" class="form-label">End regist:</label>
-              <input type="date" class="form-control" id="email" placeholder="" name="email">
-            </div>
-        </div>
-        </div>
-        <label>Location:</label>
-            <input type="text" class="form-control mt-3 mb-3" placeholder="Input your location">
-          <div class="mb-3 mt-3">
-                <label for="comment">Job description:</label>
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                <div class="mb-3 mt-3">
-                  <p>Requirement?</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="mb-3 mt-3">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                        <label class="form-check-label" for="radio1">Yes</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                        <label class="form-check-label" for="radio1">No</label>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="comment">Requirement:</label>
-                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-              </div>
-              <label>How to regist?</label>
-              <input type="text" class="form-control mt-3 mb-3" placeholder="">
-              <p style="bac"></p>
-    <div class="button1" style="margin-left: 12px; margin-right: 22px;">
-        <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
+        <label>Description:</label>
+            <input type="text" name="deskripsi" class="form-control mt-3" placeholder="Input job category">
+        <label>Employee Needed:</label>
+            <input type="number" name="jumlahLowongan" class="form-control mt-3 mb-3" placeholder="Input name">
+            
+           
+         
+              
+    <div class="button1" style="margin-left: 12px; margin-right: 22px; margin-top:40px">
+    <button href="http://127.0.0.1:8000/jobofferpage" type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
         <p style="margin-top: 5px;">Submit</p>
-    </a>
+          </button>
     </div>
     </form>
     </div>

@@ -3,12 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\LoginController;
-<<<<<<< HEAD
 use App\Http\Controllers\EventController;
-=======
-use App\Http\Controllers\organizationController;
-
->>>>>>> 3d37276f47020d32c3cc2eebdddd4a6d6dde4bb7
+use App\Http\Controllers\InputJobController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,6 +62,9 @@ Route::get('/editevent', function () {
 Route::get('/inputevent', function () {
     return view('inputevent');
 });
+Route::post('/inputevent', [InputJobController::class, 'store']);
+
+
 
 Route::get('/studentprofilews', function () {
     return view('studentprofilews');
