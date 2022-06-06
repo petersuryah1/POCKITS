@@ -70,3 +70,7 @@ Route::get('/studentprofilews', function () {
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
+
+Route::get('/dashboardorg', function () {
+    return view('dashboardorg');
+});
