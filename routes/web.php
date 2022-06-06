@@ -3,7 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\LoginController;
+<<<<<<< HEAD
 use App\Http\Controllers\EventController;
+=======
+use App\Http\Controllers\organizationController;
+
+>>>>>>> 3d37276f47020d32c3cc2eebdddd4a6d6dde4bb7
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +51,12 @@ Route::post('/signupstudent', [registrationController::class, 'store']);
 
 Route::get('/signuporg', function () {
     return view('signuporg');
+});
+
+Route::post('/signuporg', [organizationController::class, 'store']);
+
+Route::get('updateorg', function () {
+    return view('updateorg');
 });
 
 Route::get('/editevent', function () {

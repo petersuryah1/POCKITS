@@ -18,9 +18,10 @@ class CreatePerusahaansTable extends Migration
             $table->string('namaPerusahaan');
             $table->string('lokasiPerusahaan');
             $table->string('emailPerusahaan');
-            $table->integer('noTelpPerusahaan');
-            $table->string('instagram');
-            $table->string('linkedin');
+            $table->string('password');
+            $table->integer('noTelpPerusahaan')->nullable();
+            $table->string('socialMedia');
+            $table->string('about');
             $table->timestamps();
         });
     }

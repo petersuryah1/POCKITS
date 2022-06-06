@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\perusahaan;
 use Illuminate\Support\Facades\Hash;
 
-class registrationController extends Controller
+class organizationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -37,21 +38,29 @@ class registrationController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'name' => 'required',
-            'email' => 'required',
+            'namePerusahaan' => 'required',
+            'lokasiPerusahaan' => 'required',
+            'emailPerusahaan' => 'required',
             'password' => 'required',
+            'socialMedia' => 'required',
+            'about' => 'required'
         ]);
 
 
-        $user = new User();
+        $perusahaan = new Perusahaan();
 
-        $user->fill([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
+        $perusahaan->fill([
+            'namePerusahaan' => $validated['namePerusahaan'],
+            'lokasiPerusahaan' => $validated['lokasiPerusahaan'],
+            'emailPerusahaan' => $validated['emailPerusahaan'],
             'password' => Hash::make($validated['password']),
+            'socialMedia' => $validated['socialMedia'],
+            'about' => $validated['about'],
         ]);
 
-        $user->save();
+        $perusahaan->save();
+
+       return dd($perusahaan);
 
 
     }
