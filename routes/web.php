@@ -3,12 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\LoginController;
-<<<<<<< HEAD
 use App\Http\Controllers\EventController;
-=======
 use App\Http\Controllers\organizationController;
-
->>>>>>> 3d37276f47020d32c3cc2eebdddd4a6d6dde4bb7
 /*
 |--------------------------------------------------------------------------
 | Web Routes
