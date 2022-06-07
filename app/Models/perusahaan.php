@@ -13,7 +13,10 @@ class perusahaan extends Model
 
     protected $guarded = ['id'];
 
-    protected $fillable = ['namaPerusahaan', 'lokasiPerusahaan','emailPerusahaan','noTelpPerusahaan','instagram','linkedin'];
+    protected $fillable = ['namaPerusahaan', 'lokasiPerusahaan','emailPerusahaan','noTelpPerusahaan','socialMedia','about'];
+    protected $hidden = [
+        'password', 
+    ];
 
     public function joboffer() {
         return $this->hasMany(joboffer::class, 'id');

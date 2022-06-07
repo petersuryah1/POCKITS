@@ -142,33 +142,35 @@
             </div>
         </div>
 
-        <div class="form-input">
-            <div class="preview">
-                <img id="file-ip-1-preview">
-            </div>
-            <label for="file-ip-1"><u>Upload logo</u></label>
-            <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-        </div>
-        <script type="text/javascript">
-            function showPreview(event) {
-                if (event.target.files.length > 0) {
-                    var src = URL.createObjectURL(event.target.files[0]);
-                    var preview = document.getElementById("file-ip-1-preview");
-                    preview.src = src;
-                    preview.style.display = "block";
-                }
-            }
-        </script>
-        <br>
+        
 
         <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
             <form action="/signuporg" method="POST">
+                
                 @csrf
+                <div class="form-input">
+                    <div class="preview">
+                        <img id="file-ip-1-preview">
+                    </div>
+                    <label for="file-ip-1"><u>Upload logo</u></label>
+                    <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                </div>
+                <script type="text/javascript">
+                    function showPreview(event) {
+                        if (event.target.files.length > 0) {
+                            var src = URL.createObjectURL(event.target.files[0]);
+                            var preview = document.getElementById("file-ip-1-preview");
+                            preview.src = src;
+                            preview.style.display = "block";
+                        }
+                    }
+                </script>
+        <br>
                 <!-- <label>Username:</label>
             <input type="text" class="form-control mt-3 mb-3" placeholder="Input username"> -->
                 <div class="mb-3 mt-3">
                     <label for="nama" class="form-label">Nama Perusahaan:</label>
-                    <input name="namaPerusahan" type="text" class="form-control" id="email" placeholder="Enter email">
+                    <input name="namePerusahaan" type="text" class="form-control" id="email" placeholder="Enter email">
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="lokasi" class="form-label">Lokasi Perusahaan:</label>
@@ -197,7 +199,7 @@
 
                 <div class="button1" style="margin-left: 32px; margin-right: 22px;">
                     <button type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
-                height: 52px; font-family: 'Open Sans'; font-size: 18px;">
+                        height: 52px; font-family: 'Open Sans'; font-size: 18px;">
                         <p style="margin-top: 5px;">Register</p>
                     </button>
                 </div>

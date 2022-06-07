@@ -49,7 +49,6 @@ Route::post('/signupstudent', [registrationController::class, 'store']);
 Route::get('/signuporg', function () {
     return view('signuporg');
 });
-
 Route::post('/signuporg', [organizationController::class, 'store']);
 
 Route::get('updateorg', function () {

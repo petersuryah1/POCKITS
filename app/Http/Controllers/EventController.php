@@ -39,7 +39,7 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->file('image')->store('post-images')
+        return $request->file('image')->store('post-images');
     }
 
     /**

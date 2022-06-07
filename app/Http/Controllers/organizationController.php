@@ -38,7 +38,7 @@ class organizationController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'namePerusahaan' => 'required',
+            'namaPerusahaan' => 'required',
             'lokasiPerusahaan' => 'required',
             'emailPerusahaan' => 'required',
             'password' => 'required',
@@ -50,7 +50,7 @@ class organizationController extends Controller
         $perusahaan = new Perusahaan();
 
         $perusahaan->fill([
-            'namePerusahaan' => $validated['namePerusahaan'],
+            'namaPerusahaan' => $validated['namaPerusahaan'],
             'lokasiPerusahaan' => $validated['lokasiPerusahaan'],
             'emailPerusahaan' => $validated['emailPerusahaan'],
             'password' => Hash::make($validated['password']),
@@ -60,7 +60,7 @@ class organizationController extends Controller
 
         $perusahaan->save();
 
-       return dd($perusahaan);
+    //    return dd($perusahaan);
 
 
     }
