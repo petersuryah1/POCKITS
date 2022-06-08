@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>studentDashboard</title>
-=======
     <title>Student Dashboard</title>
->>>>>>> 76f9d518b61cd4fd6d7a61c78c547a42fa5ea115
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -137,25 +133,9 @@ a:hover {
 <div class="container">
 
 
-<<<<<<< HEAD
     <div class="row justify-content-between">
         <div class="col-2">
             <img src="/gambar/profileicon.png" style="margin-right: 14px;">
-=======
-<div class="row justify-content-between">
-    <div class="col-2">
-        <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
-    </div>
-
-    <div class="col-10">
-            <div class="search" style="margin-top: 10px">
-                <i class="fa fa-search"></i>
-                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
-            </div>
-
-
-
->>>>>>> 76f9d518b61cd4fd6d7a61c78c547a42fa5ea115
         </div>
         
             <div class="col justify-content-beetwen mt-2 mb-3">
@@ -167,10 +147,6 @@ a:hover {
     </div>
 
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> 76f9d518b61cd4fd6d7a61c78c547a42fa5ea115
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
     <div class="row  px-3 justify-content-between">
@@ -200,12 +176,8 @@ a:hover {
     </div>
     @endforeach
 
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 76f9d518b61cd4fd6d7a61c78c547a42fa5ea115
 <!-- Bottom Navbar -->
 <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
