@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wishlist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -142,12 +142,6 @@
 <body>
 
     <div class="container">
-        <div>
-            <a href="#" style="color:black;" class=""> <img src="/gambar/Arrow 1.png" alt=""> <span
-                    class="fourteen-400"> Back to Dashboard </span></a>
-        </div>
-
-
 
         <div class="row  d-flex justify-content-center align-items-start">
 
@@ -161,7 +155,6 @@
                 </div> --}}
 
             </div>
-
         </div>
 
         @foreach($joboffer as $Job)
@@ -176,7 +169,7 @@
                 <div class="col-9">
                     <a class="twelve px-0" href="">{{$Job->kategori}}</a>
                     <h2 class="fourteen">{{$Job->namajoboffer}}</h2>
-                    <h3 class="twelve">{{$Job->perusahaan->namaPerusahaan}}</h3>
+                    <h3 class="twelve">{{$Job->namaPerusahaan}}</h3>
                     <div class="d-flex align-self-bottom">
                         <h4 class="twelve greyfont mb-0">Regist by</h4>
                         <p class="twelve ms-4 mb-0">{{$Job->tanggalPenerimaan}}</p>
@@ -192,8 +185,8 @@
             </div>
         </div>
         @endforeach
-        
-        
+
+
         <div class="deletebutton"><img src="/gambar/deletebutton.png" alt=""></div>
 
         <!-- Bottom Navbar -->
