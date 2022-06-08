@@ -52,16 +52,16 @@ Route::get('/signuporg', function () {
 });
 Route::post('/signuporg', [organizationController::class, 'store']);
 
-Route::get('updateorg', function () {
+Route::get('/updateorg', function () {
     return view('updateorg');
 });
 
-Route::get('/editevent', function () {
-    return view('editevent');
+Route::get('/editjoboffer', function () {
+    return view('editjoboffer');
 });
 
-Route::get('/inputevent', function () {
-    return view('inputevent');
+Route::get('/inputjoboffer', function () {
+    return view('inputjoboffer');
 });
 Route::post('/inputevent', [InputJobController::class, 'store']);
 

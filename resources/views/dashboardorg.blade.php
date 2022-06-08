@@ -143,7 +143,7 @@
             right: 15px;
             bottom: 60px;
         }
-       
+
 
         .gambarprofilstudent {
             width: 77.25px;
@@ -171,7 +171,7 @@
             color:white;
         }
 
-        background-color: #023880;
+
 
 
     </style>
@@ -190,8 +190,8 @@
     <script src=
 "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
     </script>
-    
-    
+
+
 
     <div class="container">
         {{-- <div>
@@ -234,8 +234,8 @@
                 <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">About</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            
-    
+
+
         <div class="d-flex justify-content-start">
         <div >
                <p>Contact</p>
@@ -245,7 +245,7 @@
         </div>
         <div >
              <img src="/gambar/Linkedin.png" alt="">
-       
+
   </div>
   </div>
             </div>
@@ -257,11 +257,12 @@
                 <a href="" style="color: black; text-decoration: underline;">View More</a>
             </div>
             <div>
-                <img src="/gambar/addbutton.png" alt=""> 
-
+                <a href="/inputjoboffer">
+                <img src="/gambar/addbutton.png" alt="">
+                </a>
             </div>
         </div>
-        
+
         <div class="container " style="; margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
             <div class="row  px-3 justify-content-between">
 
@@ -270,22 +271,24 @@
                     <h1 class="thirteen">MY PROFILE</h2>
                 </div>
             </div>
-            
+
             <ul class="nav nav-pills mb-3  d-sm-flex  justify-content-center " id="pills-tab" role="tablist">
                 <li class=" btn active" role="presentation" style="border-radius: 50px;  width: 150px;
                 height: 36px; font-family: 'Roboto'; font-size: 16px; ">
-                <button class="fourteen active" style=" background-color:transparent; border: none; " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Past Offers</button>
+                <button class="fourteen active" style=" background-color:transparent; border: none;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Past Offers</button>
                 </li>
-                <li class=" btn" style="border-radius: 50px; width: 150px; 
+                <li class=" btn" style="border-radius: 50px; width: 150px;
                 height: 36px; font-family: 'Roboto'; font-size: 16px;" role="presentation">
-                <button class=" fourteen" style=" background-color:transparent; border: none; " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Ongoing Offers</button>
+                <button class=" fourteen" style=" background-color:transparent; border: none;" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Ongoing Offers</button>
                 </li>
             </ul>
 
-            
+
         </div>
 
-    
+
 
 
         <div class="tab-content" id="pills-tabContent">
@@ -293,7 +296,7 @@
         <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
             <div class="row  px-3 justify-content-between">
 
-                    
+
 
                 <div class="col-1 align-self-center">
                     <img src="/gambar/Vector.png" alt="">
@@ -345,17 +348,17 @@
                 </div>
 
             </div>
-        </div>      
         </div>
         </div>
+        </div>
 
-       
 
-       
 
-        
 
-        
+
+
+
+
         </div>
 
         <div class="deletebutton"><img src="/gambar/deletebutton.png" alt=""></div>
@@ -363,22 +366,22 @@
         <!-- Bottom Navbar -->
         <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
             <ul class="navbar-nav nav-justified w-100">
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link text-center" style="height:48px !important;">
                         <img src="/gambar/whiteheart.png" alt="">
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a href="#" class="nav-link text-center">
                         <img src="/gambar/home.png" alt="">
                     </a>
                 </li>
-                <li class="nav-item dropup">
+                {{-- <li class="nav-item dropup">
                     <a href="#" class="nav-link text-center" style="height:48px !important;">
                         <img src="/gambar/profile.png" alt="">
                     </a>
 
-                </li>
+                </li> --}}
             </ul>
         </nav>
     </div>
@@ -386,10 +389,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-              
+
     <script>
         $(document).ready(function () {
- 
+
             $('ul.nav-pills > li')
                     .click(function (e) {
                 $('ul.nav-pills > li')

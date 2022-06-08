@@ -11,7 +11,7 @@
       integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
       crossorigin="anonymous"
     >
-    <title>input Event</title>
+    <title>Input Job Offer</title>
     <style>
          .form-input {
   width:336px;
@@ -55,7 +55,7 @@
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #023880;
             overflow-x: hidden;
             transition: 0.5s;
@@ -95,7 +95,9 @@
         <div class="col-2">
             <div class="buttonback">
                 <button class="btn btn-default">
+                    <a href="/dashboardorg">
                 <img src="/gambar/backbutton.png" alt="" style="margin-left: 19px; margin-top: 23px">
+                    </a>
                 </button>
             </div>
         </div>
@@ -150,7 +152,7 @@
   </script>
   <br>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        
+
             <label>Job name:</label>
             <input type="text" name="namajoboffer" class="form-control mt-3 mb-3" placeholder="Input name">
             <label>Job category:</label>
@@ -173,10 +175,10 @@
             <input type="text" name="deskripsi" class="form-control mt-3" placeholder="Input job category">
         <label>Employee Needed:</label>
             <input type="number" name="jumlahLowongan" class="form-control mt-3 mb-3" placeholder="Input name">
-            
-           
-         
-              
+
+
+
+
     <div class="button1" style="margin-left: 12px; margin-right: 22px; margin-top:40px">
     <button href="http://127.0.0.1:8000/jobofferpage" type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">

@@ -55,7 +55,7 @@
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #023880;
             overflow-x: hidden;
             transition: 0.5s;
@@ -169,9 +169,9 @@
         </div>
         <label>Description:</label>
             <input type="text" name="deskripsi" class="form-control mt-3" placeholder="Input job category">
-           
 
-              
+
+
     <div class="button1" style="margin-left: 12px; margin-right: 22px; margin-top:40px">
         <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
