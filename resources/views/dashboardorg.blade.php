@@ -216,7 +216,7 @@
 
         </div>
 
-        <div class="  " style="; margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
+        <div class="" style="margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
             <div class="row  px-3 justify-content-between">
 
                 <div class="col-1 align-self-center gambarprofilstudent">
@@ -327,7 +327,7 @@
                     <img src="/gambar/Vector.png" alt="">
 
                 </div>
-
+           
                 <div class="col-9">
                     <a class="twelve px-0" href="">Job Offer Category 2</a>
                     <h2 class="fourteen">Job Name</h2>

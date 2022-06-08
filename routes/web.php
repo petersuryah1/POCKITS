@@ -6,7 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\InputJobController;
 use App\Http\Controllers\organizationController;
-use App\Http/Controllers\wishlistController;
+use App\Http\Controllers\wishlistController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

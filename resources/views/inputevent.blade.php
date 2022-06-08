@@ -152,9 +152,18 @@
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
         
             <label>Job name:</label>
-            <input type="text" name="namajoboffer" class="form-control mt-3 mb-3" placeholder="Input name">
+            <input type="text" name="namajoboffer" class="form-control mt-3 mb-3" placeholder="Input name" required>
             <label>Job category:</label>
-            <input type="text" name="kategori" class="form-control mt-3" placeholder="Input job category">
+            <div class="form-group">
+            <select class="form-control" name="kategori" placeholder="choose category" required>
+            <option value="">choose category</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Webdev">Webdev</option>
+              <option value="HRD">HRD</option>
+              <option value="Finance & Accounting">Finance & Accounting</option>
+              <option value="Project Manager">Project Manager</option>
+            </select>
+          </div>
             <div class="row">
             <div class="col-6">
             <div class="mb-3 mt-3">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>studentDashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -133,17 +133,21 @@ a:hover {
 <div class="container">
    
 
-<div class="row justify-content-between">
-    <div class="col-2">
-        <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
-    </div>
-    
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search here.." name="search">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    <div class="row justify-content-between">
+        <div class="col-2">
+            <img src="/gambar/profileicon.png" style="margin-right: 14px;">
         </div>
+        
+            <div class="col justify-content-beetwen mt-2 mb-3">
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search here.." name="search">
+                <button class="btn btn-outline-secondary" type="submit"><img src="gambar\searchicon.png" style="width:15px; height:15px"></button>
+                </div>           
+            </div>
+    </div>
 
-    @if($joboffer > 0)
+
+    
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
     <div class="row  px-3 justify-content-between">
@@ -156,7 +160,7 @@ a:hover {
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->idperusahaan}}</h3>
+            <h3 class="twelve">{{$job->idPerusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
@@ -173,9 +177,6 @@ a:hover {
     </div>
     @endforeach
 
-    @else
-    <p class="text-center">job offer not found..</p>
-    @endif
     
     
 <!-- Bottom Navbar -->
