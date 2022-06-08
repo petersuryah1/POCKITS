@@ -61,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div style="margin-top: 20px;">
-            <a href="#"  style="color:black; margin-left: 24px; " class="nounderline fourteen-400">  <img src="/gambar/Arrow 1.png" alt="">  <span> Back </span></a>
+            <a href="http://127.0.0.1:8000/studentDashboard"  style="color:black; margin-left: 24px; " class="nounderline fourteen-400">  <img src="/gambar/Arrow 1.png" alt="">  <span> Back </span></a>
             </div>
         </div>
 

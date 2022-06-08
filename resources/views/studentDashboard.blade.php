@@ -64,7 +64,7 @@ box-shadow: 0 0 40px rgba(51, 51, 51, .1);
 .search button{
 
  position: absolute;
- top: 5px;
+ top: 0px;
  right: 5px;
  height: 50px;
  width: 110px;
@@ -137,29 +137,32 @@ a:hover {
         <div class="col-2">
             <img src="/gambar/profileicon.png" style="margin-right: 14px;">
         </div>
-        
-            <div class="col justify-content-beetwen mt-2 mb-3">
+      
+            <div class="col-10 justify-content-beetwen mt-2 mb-3"> 
+            <form action="/studentDashboard">
                 <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search here.." name="search">
+                <input name="search" value="{{request('search')}}" type="text" class="form-control" placeholder="Search here.." >
                 <button class="btn btn-outline-secondary" type="submit"><img src="gambar\searchicon.png" style="width:15px; height:15px"></button>
-                </div>           
+                </div>   
+                </form>      
             </div>
+             
     </div>
 
-
+    @if(count($joboffer) > 0)
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
     <div class="row  px-3 justify-content-between">
 
         <div class="col-1 align-self-center">
-            <img src="/gambar/Vector.png" alt="">
+            <img src="/gambar/Vector.png">
 
         </div>
 
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->namaPerusahaan}}</h3>
+            <h3 class="twelve" >{{$job->idPerusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
@@ -175,6 +178,10 @@ a:hover {
     </div>
     </div>
     @endforeach
+    @else
+    <p class="text-center">No job offer found..</p>
+    @endif
+
 
     
     

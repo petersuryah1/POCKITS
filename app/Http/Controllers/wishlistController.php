@@ -42,7 +42,9 @@ class wishlistController extends Controller
     public function store(Request $request)
     {
 
-        $wishlistjoboffer = wishlistjoboffer()
+        $wishlistjoboffer = wishlistjoboffer([
+            
+        ])
 
 
     }

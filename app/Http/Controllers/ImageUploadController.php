@@ -2,36 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\joboffer;
-use App\Model\perusahaan;
-
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class ImageUploadController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function imageUpload()
     {
-
-        $search = $request->input('search');
-
-        $joboffer = joboffer::query()
-        ->where('namajoboffer', 'LIKE', "%{$search}%")
-        ->orwhere('kategori', 'LIKE', "%{$search}%")
-        ->get();        
-        
-        return view('studentDashboard', [
-            'joboffer' => $joboffer
-        ]);
-
-        
+        return view ('studentDashboard');
     }
 
+    public function immageUploadPost(Request $request)
+    {
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max2048',
+        ]);
 
+        $imageName = time (). '.'.$request->image->extension();
+        $request->image->move(public_path('images'), $imageName);
+
+        return back()
+            ->with('success','You have successfully upload image')
+            ->with('image',$imageName);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -50,7 +47,7 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->file('image')->store('post-images');
+        //
     }
 
     /**
@@ -61,8 +58,7 @@ class EventController extends Controller
      */
     public function show($id)
     {
-        $joboffer = joboffer::findorfail($id);
-        return view('jobofferpage', ['joboffer' => $joboffer]);
+        //
     }
 
     /**

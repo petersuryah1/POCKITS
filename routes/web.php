@@ -7,6 +7,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\InputJobController;
 use App\Http\Controllers\organizationController;
 use App\Http\Controllers\wishlistController;
+use App\Http\Controllers\ImageUploadController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,9 +23,7 @@ Route::get('/', function () {
     return view('welcomepage');
 });
 
-Route::get('/search', function () {
-    return view('search');
-});
+
 
 Route::get('/studentDashboard', [EventController::class, 'index'])->name('studentDashboard');
 
@@ -74,6 +73,5 @@ Route::get('/studentprofilews', function () {
 Route::get('/wishlist', [wishlistController::class, 'index'])->name('wishlist');
 
 
-Route::get('/dashboardorg', function () {
-    return view('dashboardorg');
-});
+Route::get('/dashboardorg', [EventController::class, 'index'])->name('dashboardorg');
+
