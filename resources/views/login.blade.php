@@ -19,7 +19,7 @@
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #023880;
             overflow-x: hidden;
             transition: 0.5s;
@@ -69,17 +69,12 @@
         <p></p>
     </div>
     <div class="col-2">
-        <div class="menubutton" style="margin-top: 8px; margin-right:25px; height:52px">
-          <div class="row justify-content-end">
-            <div class="col-12">
-              <div id="mySidenav" class="sidenav">
+        <div class="menubutton text-end pt-2" style="margin-top:3px;">
+            <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Contact Us</a>
-              </div>
+                <a href="#" style="margin-right: 15px">Contact Us</a>
             </div>
-          </div>
-
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
+              <span style="font-size:30px;cursor:pointer;margin-right:29px;" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
         <div class="col-2" style="margin-top:15px;">
             {{-- <div class="menu">
                 <button class="btn btn-default">
@@ -125,10 +120,10 @@
     </div>
     <a href="#" style="margin-left: 28px">Forget password? Click here</a>
     <p style="bac"></p>
-    <button type="submit" class="button1" style="margin-left: 32px; margin-right: 22px;">
-        <a href="#" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
+    <button type="submit" class="button1" style="margin-left: 32px; margin-right: 22px; border-style:none; background-color:#ffffff">
+        <a href="http://127.0.0.1:8000/studentDashboard" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">
-        <p style="margin-top: 5px;">Login</p>
+        <a href="#" style="margin-top: 5px; color:#ffffff; ">Login</a>
     </a>
           </button>
 </form>

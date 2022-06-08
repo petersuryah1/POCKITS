@@ -19,7 +19,7 @@
         position: fixed;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         background-color: #023880;
         overflow-x: hidden;
         transition: 0.5s;

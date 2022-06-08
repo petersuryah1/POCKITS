@@ -25,7 +25,7 @@
       }
 
       .sidenav a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 8px 8px 8px;
         text-decoration: none;
         font-size: 25px;
         color: #ffffff;
@@ -49,7 +49,7 @@
         .sidenav {padding-top: 15px;}
         .sidenav a {font-size: 18px;}
       }
-     
+
       </style>
 <body>
   <div class="row">
@@ -57,16 +57,16 @@
       <img src="/gambar/pockits logo.png" alt="">
     </div>
   <div class="col-6" >
-    <div class="menubutton text-end pt-2" >
+    <div class="menubutton text-end pt-2" style="margin-top:3px;">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Contact Us</a>
+            <a href="#" style="margin-right: 15px">Contact Us</a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="http://127.0.0.1:8000/login">Login</a>
+            <a href="http://127.0.0.1:8000/login" style="margin-right: 15px">Login</a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="http://127.0.0.1:8000/signup">Sign Up</a>
+            <a href="http://127.0.0.1:8000/signup" style="margin-right: 15px">Sign Up</a>
           </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
+          <span style="font-size:30px;cursor:pointer;margin-right:29px;" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
     <div class="col-2" style="margin-top:15px;">
         {{-- <div class="menu">
             <button class="btn btn-default">
@@ -128,11 +128,11 @@
         <div class="col-6" >
         <div align ="center">
           <p> CONTACT US</P>
-          <img src="/gambar/instagram.png" alt="" class="me-1"> 
-          
+          <img src="/gambar/instagram.png" alt="" class="me-1">
+
           <img src="/gambar/YouTube.png" alt="" class="me-1">
           <img src="/gambar/Linkedin.png" alt="" class="me-1">
-      </div> 
+      </div>
       </div>
 
 
