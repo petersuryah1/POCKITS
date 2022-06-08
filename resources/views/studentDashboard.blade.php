@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -144,8 +144,10 @@ a:hover {
                 <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
             </div>
 
+
+
         </div>
-</div>
+
 
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
@@ -177,22 +179,21 @@ a:hover {
     @endforeach
 
 
-
 <!-- Bottom Navbar -->
 <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="#" class="nav-link text-center" style="height:48px !important;">
+            <a href="/wishlist" class="nav-link text-center" style="height:48px !important;">
                 <img src="/gambar/whiteheart.png" alt="">
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-center">
+            <a  class="nav-link text-center">
                 <img src="/gambar/home.png" alt="">
             </a>
         </li>
         <li class="nav-item dropup">
-            <a href="#" class="nav-link text-center" style="height:48px !important;" >
+            <a href="/studentprofilews" class="nav-link text-center" style="height:48px !important;" >
                 <img src="/gambar/profile.png" alt="">
             </a>
 

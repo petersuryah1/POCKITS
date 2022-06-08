@@ -15,7 +15,7 @@
     <title>Register Organization</title>
     <style>
         .form-input {
-            width: 336px;
+            width: 280px;
             padding-left: 20px;
             padding-right: 20px;
             padding-bottom: 20px;
@@ -59,7 +59,7 @@
             position: fixed;
             z-index: 1;
             top: 0;
-            left: 0;
+            right: 0;
             background-color: #023880;
             overflow-x: hidden;
             transition: 0.5s;
@@ -142,11 +142,11 @@
             </div>
         </div>
 
-        
+
 
         <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
             <form action="/signuporg" method="POST">
-                
+
                 @csrf
                 <div class="form-input">
                     <div class="preview">
@@ -169,12 +169,12 @@
                 <!-- <label>Username:</label>
             <input type="text" class="form-control mt-3 mb-3" placeholder="Input username"> -->
                 <div class="mb-3 mt-3">
-                    <label for="nama" class="form-label">Nama Perusahaan:</label>
-                    <input name="namePerusahaan" type="text" class="form-control" id="email" placeholder="Enter email">
+                    <label for="nama" class="form-label">Organization Name:</label>
+                    <input name="namePerusahaan" type="text" class="form-control" id="email" placeholder="Enter your organization name">
                 </div>
                 <div class="mb-3 mt-3">
-                    <label for="lokasi" class="form-label">Lokasi Perusahaan:</label>
-                    <input name="lokasiPerusahaan" type="text" class="form-control" id="email" placeholder="Enter email">
+                    <label for="lokasi" class="form-label">Location:</label>
+                    <input name="lokasiPerusahaan" type="text" class="form-control" id="email" placeholder="Enter your organization location">
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Email:</label>
@@ -197,7 +197,7 @@
                     <textarea name="about" class="form-control" rows="5" id="comment" name="text"></textarea>
                 </div>
 
-                <div class="button1" style="margin-left: 32px; margin-right: 22px;">
+                <div class="button1" style="margin-left: 12px; margin-right: 22px;">
                     <button type="submit" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
                         height: 52px; font-family: 'Open Sans'; font-size: 18px;">
                         <p style="margin-top: 5px;">Register</p>

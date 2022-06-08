@@ -18,7 +18,9 @@ class EventController extends Controller
     {
         $joboffer = joboffer::all();
 
-        return view('studentDashboard', ['joboffer' => $joboffer]);
+        return view('studentDashboard', [
+            'joboffer' => $joboffer
+        ]);
     }
 
     /**

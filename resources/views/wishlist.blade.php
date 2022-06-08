@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wishlist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -142,12 +142,6 @@
 <body>
 
     <div class="container">
-        <div>
-            <a href="#" style="color:black;" class=""> <img src="/gambar/Arrow 1.png" alt=""> <span
-                    class="fourteen-400"> Back to Dashboard </span></a>
-        </div>
-
-
 
         <div class="row  d-flex justify-content-center align-items-start">
 
@@ -161,10 +155,9 @@
                 </div> --}}
 
             </div>
-
         </div>
 
-
+        @foreach($joboffer as $Job)
         <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
             <div class="row  px-3 justify-content-between">
 
@@ -174,104 +167,25 @@
                 </div>
 
                 <div class="col-9">
-                    <a class="twelve px-0" href="">Job Offer Category</a>
-                    <h2 class="fourteen">Job Name</h2>
-                    <h3 class="twelve">Company Name</h3>
+                    <a class="twelve px-0" href="">{{$Job->kategori}}</a>
+                    <h2 class="fourteen">{{$Job->namajoboffer}}</h2>
+                    <h3 class="twelve">{{$Job->namaPerusahaan}}</h3>
                     <div class="d-flex align-self-bottom">
                         <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
+                        <p class="twelve ms-4 mb-0">{{$Job->tanggalPenerimaan}}</p>
                     </div>
 
 
                     <div class="d-flex ">
                         <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">DD-MM-YYY</p>
+                        <p class="twelve ms-2">{{$Job->tanggalPenutupan}}</p>
                     </div>
                 </div>
 
             </div>
         </div>
+        @endforeach
 
-        <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
-            <div class="row  px-3 justify-content-between">
-
-                <div class="col-1 align-self-center">
-                    <img src="/gambar/Vector.png" alt="">
-
-                </div>
-
-                <div class="col-9">
-                    <a class="twelve px-0" href="">Job Offer Category</a>
-                    <h2 class="fourteen">Job Name</h2>
-                    <h3 class="twelve">Company Name</h3>
-                    <div class="d-flex align-self-bottom">
-                        <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
-                    </div>
-
-
-                    <div class="d-flex ">
-                        <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">DD-MM-YYY</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
-            <div class="row  px-3 justify-content-between">
-
-                <div class="col-1 align-self-center">
-                    <img src="/gambar/Vector.png" alt="">
-
-                </div>
-
-                <div class="col-9">
-                    <a class="twelve px-0" href="">Job Offer Category</a>
-                    <h2 class="fourteen">Job Name</h2>
-                    <h3 class="twelve">Company Name</h3>
-                    <div class="d-flex align-self-bottom">
-                        <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
-                    </div>
-
-
-                    <div class="d-flex ">
-                        <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">DD-MM-YYY</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
-            <div class="row  px-3 justify-content-between">
-
-                <div class="col-1 align-self-center">
-                    <img src="/gambar/Vector.png" alt="">
-
-                </div>
-
-                <div class="col-9">
-                    <a class="twelve px-0" href="">Job Offer Category</a>
-                    <h2 class="fourteen">Job Name</h2>
-                    <h3 class="twelve">Company Name</h3>
-                    <div class="d-flex align-self-bottom">
-                        <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
-                    </div>
-
-
-                    <div class="d-flex ">
-                        <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">DD-MM-YYY</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
         <div class="deletebutton"><img src="/gambar/deletebutton.png" alt=""></div>
 
