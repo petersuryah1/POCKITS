@@ -169,7 +169,7 @@
                 <div class="col-9">
                     <a class="twelve px-0" href="">{{$Job->kategori}}</a>
                     <h2 class="fourteen">{{$Job->namajoboffer}}</h2>
-                    <h3 class="twelve">{{$Job->perusahaan->namaPerusahaan}}</h3>
+                    <h3 class="twelve">{{$Job->namaPerusahaan}}</h3>
                     <div class="d-flex align-self-bottom">
                         <h4 class="twelve greyfont mb-0">Regist by</h4>
                         <p class="twelve ms-4 mb-0">{{$Job->tanggalPenerimaan}}</p>

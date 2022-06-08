@@ -133,21 +133,18 @@ a:hover {
 <div class="container">
 
 
-<div class="row justify-content-between">
-    <div class="col-2">
-        <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
-    </div>
-
-
-    <div class="col-10">
-            <div class="search" style="margin-top: 10px">
-                <i class="fa fa-search"></i>
-                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
-            </div>
-
-
-
+    <div class="row justify-content-between">
+        <div class="col-2">
+            <img src="/gambar/profileicon.png" style="margin-right: 14px;">
         </div>
+        
+            <div class="col justify-content-beetwen mt-2 mb-3">
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search here.." name="search">
+                <button class="btn btn-outline-secondary" type="submit"><img src="gambar\searchicon.png" style="width:15px; height:15px"></button>
+                </div>           
+            </div>
+    </div>
 
 
     @foreach($joboffer as $job)
@@ -162,7 +159,7 @@ a:hover {
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->idperusahaan}}</h3>
+            <h3 class="twelve">{{$job->namaPerusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
@@ -179,7 +176,8 @@ a:hover {
     </div>
     @endforeach
 
-
+    
+    
 <!-- Bottom Navbar -->
 <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
