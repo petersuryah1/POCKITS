@@ -142,12 +142,6 @@
 <body>
 
     <div class="container">
-        <div>
-            <a href="#" style="color:black;" class=""> <img src="/gambar/Arrow 1.png" alt=""> <span
-                    class="fourteen-400"> Back to Dashboard </span></a>
-        </div>
-
-
 
         <div class="row  d-flex justify-content-center align-items-start">
 
@@ -161,7 +155,6 @@
                 </div> --}}
 
             </div>
-
         </div>
 
 

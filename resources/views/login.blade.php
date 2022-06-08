@@ -122,8 +122,8 @@
     <p style="bac"></p>
     <button type="submit" class="button1" style="margin-left: 32px; margin-right: 22px; border-style:none; background-color:#ffffff">
         <a href="http://127.0.0.1:8000/studentDashboard" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
-        height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">
-        <a href="#" style="margin-top: 5px; color:#ffffff; ">Login</a>
+        height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">Login
+        
     </a>
           </button>
 </form>
