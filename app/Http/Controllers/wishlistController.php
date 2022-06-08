@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\perusahaan;
 use App\Models\joboffer;
+use App\Models\wishlistjoboffer;
 use Illuminate\Support\Facades\Hash;
 
 class wishlistController extends Controller
@@ -41,7 +42,7 @@ class wishlistController extends Controller
     public function store(Request $request)
     {
 
-    //    return dd($perusahaan);
+        $wishlistjoboffer = wishlistjoboffer()
 
 
     }
@@ -56,7 +57,7 @@ class wishlistController extends Controller
     {
         $joboffer = joboffer::findorfail($id);
         return view('wishlist', ['joboffer' => $joboffer]);
-    
+
     }
 
     /**

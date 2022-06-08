@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 
 <!-- css search bar -->
 <style>
@@ -32,7 +32,7 @@ body{
 .search{
 position: relative;
 box-shadow: 0 0 40px rgba(51, 51, 51, .1);
-  
+
 }
 
 .search input{
@@ -131,53 +131,53 @@ a:hover {
 <body>
 
 <div class="container">
-   
+
 
 <div class="row justify-content-between">
     <div class="col-2">
         <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
     </div>
-    
+
     <div class="col-10">
             <div class="search" style="margin-top: 10px">
                 <i class="fa fa-search"></i>
-                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">                
+                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
             </div>
-            
+
         </div>
 </div>
 
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
     <div class="row  px-3 justify-content-between">
-   
+
         <div class="col-1 align-self-center">
             <img src="/gambar/Vector.png" alt="">
-           
+
         </div>
 
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->idperusahaan->namaPerusahaan}}</h3>
+            <h3 class="twelve">{{$job->namaPerusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
             </div>
 
-            
+
             <div class="d-flex ">
                 <h4 class="twelve greyfont">Job Offer on</h4>
                 <p class="twelve ms-2">{{$job->tanggalPenutupan}}</p>
             </div>
         </div>
-        
+
     </div>
     </div>
     @endforeach
-   
-    
-    
+
+
+
 <!-- Bottom Navbar -->
 <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
@@ -195,7 +195,7 @@ a:hover {
             <a href="#" class="nav-link text-center" style="height:48px !important;" >
                 <img src="/gambar/profile.png" alt="">
             </a>
-            
+
         </li>
     </ul>
 </nav>
@@ -204,7 +204,7 @@ a:hover {
 
 
 
-    
+
 </body>
 
 </html>
