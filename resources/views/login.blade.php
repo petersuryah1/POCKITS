@@ -105,7 +105,7 @@
         </p>
     </div>
     <div class="formstudent" style="margin-left: 28px; margin-right: 37px">
-        <form action="/login" method="POST" class="was-validated">
+        <form action="/login" method="POST" class="">
         @csrf
             <div class="mb-3 mt-3">
               <label for="email" class="form-label">Email:</label>
@@ -123,7 +123,7 @@
     <button type="submit" class="button1" style="margin-left: 32px; margin-right: 22px; border-style:none; background-color:#ffffff">
         <a href="http://127.0.0.1:8000/studentDashboard" class="btn btn-success" style="border-radius: 12px; background-color: #023880; width: 262px;
         height: 52px; font-family: 'Open Sans'; font-size: 18px;" type="submit">Login
-        
+
     </a>
           </button>
 </form>

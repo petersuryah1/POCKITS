@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -138,14 +138,17 @@ a:hover {
         <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
     </div>
 
+
     <div class="col-10">
             <div class="search" style="margin-top: 10px">
                 <i class="fa fa-search"></i>
                 <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">
             </div>
 
+
+
         </div>
-</div>
+
 
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
@@ -159,7 +162,7 @@ a:hover {
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->idperusahaan->namaPerusahaan}}</h3>
+            <h3 class="twelve">{{$job->idperusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
@@ -177,22 +180,21 @@ a:hover {
     @endforeach
 
 
-
 <!-- Bottom Navbar -->
 <nav class="navbar navbar-custom  navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none p-0">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="http://127.0.0.1:8000/wishlist" class="nav-link text-center" style="height:48px !important;">
+            <a href="/wishlist" class="nav-link text-center" style="height:48px !important;">
                 <img src="/gambar/whiteheart.png" alt="">
             </a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link text-center">
+            <a  class="nav-link text-center">
                 <img src="/gambar/home.png" alt="">
             </a>
         </li>
         <li class="nav-item dropup">
-            <a href="http://127.0.0.1:8000/studentprofilews" class="nav-link text-center" style="height:48px !important;" >
+            <a href="/studentprofilews" class="nav-link text-center" style="height:48px !important;" >
                 <img src="/gambar/profile.png" alt="">
             </a>
 

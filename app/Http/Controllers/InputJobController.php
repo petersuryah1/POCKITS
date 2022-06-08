@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\joboffer;
+use App\Models\perusahaan;
 
 class InputJobController extends Controller
 {

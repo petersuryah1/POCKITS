@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\InputJobController;
 use App\Http\Controllers\organizationController;
+use App\Http\Controllers\wishlistController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,9 +71,8 @@ Route::get('/studentprofilews', function () {
     return view('studentprofilews');
 });
 
-Route::get('/wishlist', function () {
-    return view('wishlist');
-});
+Route::get('/wishlist', [wishlistController::class, 'index'])->name('wishlist');
+
 
 Route::get('/dashboardorg', function () {
     return view('dashboardorg');

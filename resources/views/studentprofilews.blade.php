@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,6 +16,45 @@
 
     <!-- css search bar -->
     <style>
+         .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #023880;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+          }
+
+          .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+          }
+
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+
+          .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+
+          @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+          }
+
         body {
             background-color: #fff;
             font-family: "Poppins", sans-serif;
@@ -178,21 +217,42 @@
         </div>
 
         <div class="  " style="; margin-top: 24px; border-bottom: 1px solid #B4B4B4;">
-            <div class="row  px-3 justify-content-between">
+            <div class="row">
 
-                <div class="col-1 align-self-center gambarprofilstudent">
-                    <img src="/gambar/profileicon.png" width="77.25" height="78.93" alt="">
-
+                <div class="col-3 ">
+                    <img src="/gambar/profileicon.png" width="77.25" height="78.93" style="">
                 </div>
 
-                <div class="col-9 align-self-center">
+                <div class="col-7 " width="200"style="margin-top:19px;">
                     <h1 class="thirteen">STUDENT NAME</h2>
                         <h3 class="twelve">email@integra</h3>
-
-
-
                 </div>
 
+                <div class="col-2 " >
+                    <div class="menubutton text-end pt-2" style="margin-top:3px;">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="/login" style="margin-right: 15px">Log Out</a>
+                        </div>
+                          <span style="font-size:30px;cursor:pointer;margin-right:29px;" onclick="openNav()"><img src="/gambar/Menu.png"> </span>
+                    <div class="col-2" style="margin-top:15px;">
+                        {{-- <div class="menu">
+                            <button class="btn btn-default">
+                            <img src="/gambar/Menu.png" alt="">
+                            </button>
+                         </div> --}}
+                    </div>
+                    <script>
+                        function openNav() {
+                          document.getElementById("mySidenav").style.width = "180px";
+                        }
+
+                        function closeNav() {
+                          document.getElementById("mySidenav").style.width = "0";
+                        }
+                        </script>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -342,7 +402,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropup">
-                    <a href="studentprofilews" class="nav-link text-center" style="height:48px !important;">
+                    <a href="/studentprofilews" class="nav-link text-center" style="height:48px !important;">
                         <img src="/gambar/profile.png" alt="">
                     </a>
 
