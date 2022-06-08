@@ -138,15 +138,12 @@ a:hover {
         <img src="/gambar/profileicon.png" style="margin-right: 14px;"alt="">
     </div>
     
-    <div class="col-10">
-            <div class="search" style="margin-top: 10px">
-                <i class="fa fa-search"></i>
-                <input  style="border: 1px solid #B4B4B4; height: 33px;" type="text" class="form-control" placeholder="Search">                
-            </div>
-            
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search here.." name="search">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
         </div>
-</div>
 
+    @if($joboffer > 0)
     @foreach($joboffer as $job)
     <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
     <div class="row  px-3 justify-content-between">
@@ -159,7 +156,7 @@ a:hover {
         <div class="col-9">
             <a class="twelve px-0" href="{{route('detailJoboffer', $job->id)}}">{{$job->kategori}}</a>
             <h2 class="fourteen">{{$job->namajoboffer}}</h2>
-            <h3 class="twelve">{{$job->idperusahaan->namaPerusahaan}}</h3>
+            <h3 class="twelve">{{$job->idperusahaan}}</h3>
             <div class="d-flex align-self-bottom">
                 <h4 class="twelve greyfont mb-0">Regist by</h4>
                 <p class="twelve ms-4 mb-0">{{$job->tanggalPenerimaan}}</p>
@@ -175,7 +172,10 @@ a:hover {
     </div>
     </div>
     @endforeach
-   
+
+    @else
+    <p class="text-center">job offer not found..</p>
+    @endif
     
     
 <!-- Bottom Navbar -->
