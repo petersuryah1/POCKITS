@@ -54,6 +54,8 @@ class InputJobController extends Controller
         ]);
 
         $joboffer->save();
+
+        return redirect('inputjoboffer');
     }
 
     /**

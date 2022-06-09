@@ -70,8 +70,9 @@ Route::get('/studentprofilews', function () {
     return view('studentprofilews');
 });
 
-Route::get('/wishlist', [wishlistController::class, 'index'])->name('wishlist');
 
+Route::get('/dashboardorg', function () {
+    return view('dashboardorg');
+});
 
-Route::get('/dashboardorg', [EventController::class, 'index'])->name('dashboardorg');
 

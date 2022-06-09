@@ -290,41 +290,38 @@
 
 
 
-        @foreach($joboffer as $J)
+
         <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
         <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 24px;">
             <div class="row  px-3 justify-content-between">
 
 
-                
+
                 <div class="col-1 align-self-center">
                     <img src="/gambar/Vector.png" alt="">
 
                 </div>
 
                 <div class="col-9">
-                    <a class="twelve px-0" href="">{{$J->kategori}}</a>
-                    <h2 class="fourteen">{{$J->namajoboffer}}</h2>
-                    <h3 class="twelve">{{$J->perusahaan->namaPerusahaan}}</h3>
+                    <a class="twelve px-0" href="">Job Offer Category 1</a>
+                    <h2 class="fourteen">Job Name</h2>
+                    <h3 class="twelve">Company Name</h3>
                     <div class="d-flex align-self-bottom">
                         <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">{{$J->tanggalPenerimaan}}</p>
+                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
                     </div>
 
 
                     <div class="d-flex ">
                         <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">{{$J->tanggalPenutupan}}</p>
+                        <p class="twelve ms-2">DD-MM-YYY</p>
                     </div>
                 </div>
 
             </div>
         </div>
         </div>
-        @endforeach
-
-        @foreach($joboffer as $J)
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
         <div class="card  mx-auto " style="border: 1px solid #B4B4B4; margin-top: 13.95px;">
             <div class="row  px-3 justify-content-between">
@@ -335,18 +332,18 @@
                 </div>
            
                 <div class="col-9">
-                    <a class="twelve px-0" href="">{{$J->kategori}}</a>
-                    <h2 class="fourteen">{{$J->namajoboffer}}</h2>
-                    <h3 class="twelve">{{$J->perusahaan->namaPerusahaan}}</h3>
+                    <a class="twelve px-0" href="">Job Offer Category 2</a>
+                    <h2 class="fourteen">Job Name</h2>
+                    <h3 class="twelve">Company Name</h3>
                     <div class="d-flex align-self-bottom">
                         <h4 class="twelve greyfont mb-0">Regist by</h4>
-                        <p class="twelve ms-4 mb-0">{{$J->tanggalPenerimaan}}</p>
+                        <p class="twelve ms-4 mb-0">DD-MM-YYY</p>
                     </div>
 
 
                     <div class="d-flex ">
                         <h4 class="twelve greyfont">Job Offer on</h4>
-                        <p class="twelve ms-2">{{$J->tanggalPenutupan}}</p>
+                        <p class="twelve ms-2">DD-MM-YYY</p>
                     </div>
                 </div>
 
@@ -354,7 +351,6 @@
         </div>
         </div>
         </div>
-        @endforeach
 
 
 
